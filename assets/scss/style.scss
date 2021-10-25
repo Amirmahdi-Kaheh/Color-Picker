@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// container styling 
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+
+    .section{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content:  flex-end;
+        align-items:center;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 40px;
+        flex-direction: column;
+        
+        p:last-child{
+            margin-bottom: 2rem;
+        }
+        .hexCode{
+            margin: .5rem;
+        }
+        .rgbCode{
+            font-size: 25px ;
+            opacity: .8;
+        }
+        
+        .copyBtn{
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 25px;
+            opacity: .7;
+            padding: .6rem .8rem;
+            border-radius: 50px;
+            margin-bottom: 2.5rem ;
+            transform: translateY(10px);
+            opacity: 0;
+            transition: all .40s ease-in-out;
+            cursor: pointer;
+        }
+
+        &:hover .copyBtn{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    
+}
+
+// warning box styling
+.warningBox{
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    box-shadow:0 0 10px #bfbfbf ;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    background-color: #eee;
+    padding: .7rem 1.5rem;
+    border-radius: 60px;
+    animation: warningBoxAnim 3s ease-in-out;
+}
+
+// modal container styling
+.modal{
+    position: absolute;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    .modalContent{
+        width: 600px;
+        background-color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        padding: 3rem;
+        position: relative;
+        h3{
+            opacity: .7;
+            font-size: 22px;
+            margin-bottom: 2rem;
+
+        }
+        .closeBtn{
+            position: absolute;
+            opacity: .6;
+            font-size:40px;
+            top: 40px;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+
+            section{
+                text-align: left;
+                font-weight: 600;
+                
+                p{
+                    margin: 1.2rem 0;
+                    opacity: .7;
+
+                    i{
+                        margin: 0 1rem ;
+                        background-color: #fa8072;
+                        cursor: pointer;
+                        padding: .7rem;
+                        color: #fff;
+                        border-radius: 50px;
+                    }
+                }
+            }
+            .colorPreview{
+                background-color: #fa8072;
+                width: 200px;
+                border-radius: 20px;
+                height: 80%;
+            }
+        }
+    }
+}
+
+@keyframes warningBoxAnim{
+    0%{opacity: 1;}
+    85%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+// made by amirmahdi kaheh https://ir.linkedin.com/in/amirmahdi-kaheh-1b65291a6 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section" id="one">
+            <span class="copyBtn" id="copyBtn1"><i class="fas fa-copy"></i></span>
+            <p class="hexCode" id="hexCode1"></p>
+            <p class="rgbCode" id="rgbCode1"></p>
+        </div>
+
+        <div class="section" id="two">
+            <span class="copyBtn"><i class="fas fa-copy" id="copyBtn2"></i></span>
+            <p class="hexCode" id="hexCode2"></p>
+            <p class="rgbCode" id="rgbCode2"></p>
+        </div>
+
+        <div class="section" id="three">
+            <span class="copyBtn"><i class="fas fa-copy" id="copyBtn3"></i></span>
+            <p class="hexCode" id="hexCode3"></p>
+            <p class="rgbCode" id="rgbCode3"></p>
+        </div>
+
+        <div class="section" id="four">
+            <span class="copyBtn"><i class="fas fa-copy" id="copyBtn4"></i></span>
+            <p class="hexCode" id="hexCode4"></p>
+            <p class="rgbCode" id="rgbCode4"></p>
+        </div>
+        <div class="section" id="five">
+            <span class="copyBtn"><i class="fas fa-copy" id="copyBtn5"></i></span>
+            <p class="hexCode" id="hexCode5"></p>
+            <p class="rgbCode" id="rgbCode5"></p>
+        </div>
+    </div>
+
+    <div class="warningBox">Press Space to change colors </div>
+
+
+    <!-- start modal -->
+    <div class="modal">
+
+        <div class="modalContent">
+            <h3>Copy Code</h3>
+            <div class="content" id="modalContent">
+                <section>
+                    <p>HEX <span>#333333</span> <span class="copyBtn"><i class="fas fa-copy"></i></span></p>
+                    <p>RGB <span>250,00,057</span><span class="copyBtn"><i class="fas fa-copy"></i></span></p>
+                </section>
+                <div class="colorPreview" ></div>
+            
+            </div>
+             <i class="fas fa-times closeBtn"></i>
+
+        </div>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
+
+<!-- made by amirmahdi kaheh https://ir.linkedin.com/in/amirmahdi-kaheh-1b65291a6 -->

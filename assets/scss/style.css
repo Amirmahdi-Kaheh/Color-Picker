@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .section {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section p:last-child {
+  margin-bottom: 2rem;
+}
+
+.container .section .hexCode {
+  margin: .5rem;
+}
+
+.container .section .rgbCode {
+  font-size: 25px;
+  opacity: .8;
+}
+
+.container .section .copyBtn {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 25px;
+  opacity: .7;
+  padding: .6rem .8rem;
+  border-radius: 50px;
+  margin-bottom: 2.5rem;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0;
+  -webkit-transition: all .40s ease-in-out;
+  transition: all .40s ease-in-out;
+  cursor: pointer;
+}
+
+.container .section:hover .copyBtn {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.warningBox {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #bfbfbf;
+          box-shadow: 0 0 10px #bfbfbf;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
+  background-color: #eee;
+  padding: .7rem 1.5rem;
+  border-radius: 60px;
+  -webkit-animation: warningBoxAnim 3s ease-in-out;
+          animation: warningBoxAnim 3s ease-in-out;
+}
+
+.modal {
+  position: absolute;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .modalContent {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+}
+
+.modal .modalContent h3 {
+  opacity: .7;
+  font-size: 22px;
+  margin-bottom: 2rem;
+}
+
+.modal .modalContent .closeBtn {
+  position: absolute;
+  opacity: .6;
+  font-size: 40px;
+  top: 40px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.modal .modalContent .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+}
+
+.modal .modalContent .content section {
+  text-align: left;
+  font-weight: 600;
+}
+
+.modal .modalContent .content section p {
+  margin: 1.2rem 0;
+  opacity: .7;
+}
+
+.modal .modalContent .content section p i {
+  margin: 0 1rem;
+  background-color: #fa8072;
+  cursor: pointer;
+  padding: .7rem;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.modal .modalContent .content .colorPreview {
+  background-color: #fa8072;
+  width: 200px;
+  border-radius: 20px;
+  height: 80%;
+}
+
+@-webkit-keyframes warningBoxAnim {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes warningBoxAnim {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
